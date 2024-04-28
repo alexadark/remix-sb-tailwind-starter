@@ -14,6 +14,9 @@ dependencies:
   '@remix-run/serve':
     specifier: ^2.9.1
     version: 2.9.1(typescript@5.4.5)
+  '@storyblok/react':
+    specifier: ^3.0.10
+    version: 3.0.10(react-dom@18.3.1)(react@18.3.1)
   '@tailwindcss/forms':
     specifier: ^0.5.7
     version: 0.5.7(tailwindcss@3.4.3)
@@ -1374,6 +1377,23 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@storyblok/js@3.0.8:
+    resolution: {integrity: sha512-JY+abbswBId84Ubr0yRwNpq5Klf9546Ia2Qs1pn6en5Trz8o6EcBJIwxvR6evjJ0Vp2cLKT7MV1yfGLAtnzycA==}
+    dependencies:
+      storyblok-js-client: 6.7.3
+    dev: false
+
+  /@storyblok/react@3.0.10(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-7cyUdCoT/kTXFJLojPhqhguvcTjvIizPh3wf90Q99zrD7quMALX9E6Ag/gSGkyWdMTQ7Wcbh2zEQaZxEDx0FRg==}
+    peerDependencies:
+      react: ^17.0.0 || ^18.0.0
+      react-dom: ^17.0.0 || ^18.0.0
+    dependencies:
+      '@storyblok/js': 3.0.8
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    dev: false
 
   /@tailwindcss/forms@0.5.7(tailwindcss@3.4.3):
     resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
@@ -5615,6 +5635,10 @@ packages:
   /statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
+
+  /storyblok-js-client@6.7.3:
+    resolution: {integrity: sha512-fBBxtyju6xtFYgAgoWBaU7WagB8M6wN+N+A3UAhZtAPW8yZmlbr3nZu26ErYIbSLaeueyFlcNrI4Kag+Kszsdw==}
+    dev: false
 
   /stream-shift@1.0.3:
     resolution: {integrity: sha512-76ORR0DO1o1hlKwTbi/DM3EXWGf3ZJYO8cXX5RJwnul2DEg2oyoZyjLNoQM8WsvZiFKCRfC1O0J7iCvie3RZmQ==}
