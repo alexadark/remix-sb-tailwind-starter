@@ -1,4 +1,4 @@
-import { json } from "@remix-run/node";
+import { LoaderFunction, LoaderFunctionArgs, json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 
 import {
@@ -7,7 +7,7 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
 
-export const loader = async ({ params }) => {
+export const loader: LoaderFunction = async ({ params }: LoaderFunctionArgs) => {
   let slug = params["*"] ?? "home";
 
   let sbParams = {
